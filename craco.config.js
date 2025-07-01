@@ -16,4 +16,8 @@ module.exports = {
       return webpackConfig;
     },
   },
+  babel: {
+    // plugins: process.env.NODE_ENV ? [['react-refresh/babel', { skipEnvCheck: true }]] : []
+    plugins:[]
+  }
 };

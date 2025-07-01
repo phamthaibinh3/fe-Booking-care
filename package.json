@@ -11,6 +11,7 @@
     "bootstrap": "^4.6.0",
     "buffer": "^6.0.3",
     "connected-react-router": "^6.9.1",
+    "cross-env": "^7.0.3",
     "lodash": "^4.17.21",
     "markdown-it": "^12.1.0",
     "moment": "^2.29.0",
@@ -48,8 +49,8 @@
     "url": "^0.11.4"
   },
   "scripts": {
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider && craco start",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider && craco build",
+    "start": "cross-env NODE_ENV=development craco start",
+    "build": "cross-env NODE_ENV=production craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
